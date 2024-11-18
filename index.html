@@ -34,7 +34,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="fade-in">
+    <!-- <section id="services" class="fade-in">
         <h2>Nos services</h2>
         <div class="services-cards">
             <div class="service-card">
@@ -53,10 +53,32 @@
                 <p>Stratégies de marketing efficaces pour booster votre visibilité.</p>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- Services Section -->
+<section id="services" class="fade-in">
+    <h2>Nos services</h2>
+    <div class="services-cards">
+        <div class="service-card">
+            <i class="fa fa-paint-brush"></i>
+            <h3>Design Web</h3>
+            <p>Création de designs modernes et responsives.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa fa-code"></i>
+            <h3>Développement</h3>
+            <p>Développement d'applications web et mobiles.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa fa-bullhorn"></i>
+            <h3>Marketing Digital</h3>
+            <p>Stratégies de marketing efficaces pour booster votre visibilité.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    <!-- <section id="portfolio">
         <h2>Nos réalisations</h2>
         <div class="portfolio-gallery">
             <div class="portfolio-item">
@@ -74,10 +96,46 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- Portfolio Section -->
+<section id="portfolio">
+    <h2>Nos réalisations</h2>
+    <div class="portfolio-gallery">
+        <div class="portfolio-item">
+            <img src="images/website.jpeg" alt="Projet 1">
+            <div class="portfolio-hover">
+                <h3>Projet 1</h3>
+                <p>Création d'un site web moderne pour une startup.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/markting.jpeg" alt="Projet 2">
+            <div class="portfolio-hover">
+                <h3>Projet 2</h3>
+                <p>Campagne de marketing digital réussie.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/mobileApp.jpeg" alt="Projet 3">
+            <div class="portfolio-hover">
+                <h3>Projet 3</h3>
+                <p>Développement d'une application mobile innovante.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/e-commerce.jpeg" alt="Projet 4">
+            <div class="portfolio-hover">
+                <h3>Projet 4</h3>
+                <p>Refonte complète du site e-commerce d'un client.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Témoignages Section -->
-    <section id="testimonials" class="fade-in">
+    <!-- <section id="testimonials" class="fade-in">
         <h2>Témoignages</h2>
         <div class="testimonial-carousel">
             <div class="testimonial-item">
@@ -97,7 +155,37 @@
                 <h4>- Client 4</h4>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- Témoignages Section -->
+<section id="testimonials" class="fade-in">
+    <h2>Témoignages</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial-item">
+            <img src="images/Claire.jpg" alt="Client 1" class="testimonial-photo">
+            <p>"Notre collaboration avec cette agence a été un succès total ! Les résultats ont dépassé nos attentes."</p>
+            <h4>- 
+                Claire Dupont</h4>
+        </div>
+        <div class="testimonial-item">
+            <img src="images/Abdoulaye.jpeg" alt="Client 2" class="testimonial-photo">
+            <p>"Une équipe professionnelle et créative qui a su répondre à nos besoins en marketing digital."</p>
+            <h4>- Abdoulaye Sow</h4>
+        </div>
+        <div class="testimonial-item">
+            <img src="images/Oumar.jpg" alt="Client 3" class="testimonial-photo">
+            <p>"Le design et le développement de notre site web ont été réalisés avec une grande qualité. Merci à l'équipe !"</p>
+            <h4>- Oumar Kane</h4>
+        </div>
+        <div class="testimonial-item">
+            <img src="images/Karim.jpeg" alt="Client 4" class="testimonial-photo">
+            <p>"Un service client exceptionnel et des solutions innovantes pour notre entreprise."</p>
+            <h4>- Karim Fall</h4>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -119,7 +207,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Agence Créative. Tous droits réservés.</p>
+        <p>&copy; 2024 CREASENEGAL. Tous droits réservés.</p>
         <div class="social-links">
             <a href="#">Facebook</a>
             <a href="#">Instagram</a>
@@ -128,6 +216,24 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.testimonial-carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true
+    });
+});
+</script>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
